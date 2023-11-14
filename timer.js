@@ -12,6 +12,7 @@ var originalTime = 0;
 
 // start the timer
 function start() {
+    document.getElementById("progress").style.display = "block"
     var minutes = getMinutes()
     //console.log(minutes);
 	
@@ -66,6 +67,7 @@ function start() {
 
 // stop the timer
 function stop() {
+    document.getElementById("progress").style.display = "none"
     started = false;
     // faster reset; otherwise we would rely on the reset performed within the start()-function, which may take up to 500ms
     time.minutes = 0;

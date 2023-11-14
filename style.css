@@ -1,0 +1,210 @@
+html, body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(-45deg, #ee7752, #59046e, #0b6a8d, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif !important;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.login-popup-content {
+  backdrop-filter: blur(10px);
+  color: #a902db;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.604);
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: #ffffff77;
+}
+
+.login-popup-content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell";
+  margin: 0 0 20px;
+  text-align: center;
+  margin-bottom: 20px !important;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+.form-group label {
+  color: #777;
+  font-size: 18px;
+  font-weight: normal;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+
+.form-group input {
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid #ddd;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input:hover {
+  transform: scale(1.1, 1.1);
+}
+
+
+.form-group input:focus {
+  border-bottom-color: #00bcd4;
+  outline: none;
+}
+
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  font-size: 14px;
+  top: -25px;
+  color: black;
+}
+
+
+.btn {
+  background-color: #a902db;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 30px auto 0;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #a902db;
+  transform: scale(1.2, 1.2);
+}
+
+.btn:active {
+  transform: scale(0.9, 0.9);
+}
+
+
+@media (max-width: 767px) {
+  .login-popup-content {
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  
+  .login-popup-content h1 {
+    font-size: 24px;
+  }
+
+  
+  .form-group label {
+    font-size: 16px;
+  }
+
+  
+  .form-group input {
+    font-size: 16px;
+  }
+
+  
+  .btn {
+    font-size: 16px;
+  }
+
+}
+
+        
+/* Timer css */
+.title,.subtitle {
+  color: #ccf3ff;
+}
+
+.hero {
+    background:none;
+}
+
+.customise {
+    background:none;
+    border:none;
+    color:#fff;
+    font-size: 75px;
+    width:100%;
+    text-align:center;
+    background: -webkit-linear-gradient(270deg, #dfff61, #a1f4ff);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.customise:focus {
+    outline:none;
+    text-decoration:underline;
+}
+
+.input {
+    background:none;
+    color:#fff;
+}
+
+#timer {
+    font-size: largest;
+}
+
+#progress {
+    transition:1s;
+    height:10px;
+    background:#fe9900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fe9900;
+    padding: 10px;
+    z-index: 9999;	
+    border-radius: 15px;
+}
