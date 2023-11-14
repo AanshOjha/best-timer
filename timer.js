@@ -66,7 +66,6 @@ function start() {
 
 // stop the timer
 function stop() {
-    document.getElementById("progress").style.display = "none"
     started = false;
     // faster reset; otherwise we would rely on the reset performed within the start()-function, which may take up to 500ms
     time.minutes = 0;
