@@ -12,7 +12,6 @@ var originalTime = 0;
 
 // start the timer
 function start() {
-    document.getElementById("progress").style.display = "block"
     var minutes = getMinutes()
     //console.log(minutes);
 	
